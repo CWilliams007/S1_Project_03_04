@@ -22,17 +22,153 @@
 */
 /* Header Styles */
 /* Structural Styles */
+/* Sets the entire HTML elements background color to white as a backup and the main as a image of water, sets the image background to fixed so that it does not move. */
 html {
     background-color: #ffffff;
+    background: url('water2.jpeg');
+    background-attachment: fixed;
 }
 
+/* Sets the bodies font style to Dobkin and the background-color to light blue. */
 body {
-    background-color: cornsilk;
+    background-color: lightblue;
     font-family: Dobkin, sans-serif;
 }
 
+/* Sets margin, padding, and font size of paragraphs nested inside the body. */
+body p {
+    margin: 5px;
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+/* Span is set inside the paragraphs to ID the first few words of the paragraph easily, changing the font style. */
+span {
+    font-family: Champagne, sans-serif;
+    font-size: 1.5em;
+}
+
+/* Any headings inside the section will have a different font style and size, darkblue text color as well. */
+section h1 {
+    font-style: normal;
+    font-family: Champagne, sans-serif;
+    font-size: 2.4em;
+    margin: 0em;
+    text-align: center;
+    color: darkblue;
+    background-color: skyblue;
+}
+
+/* Sets images inside the left column to float in the center of the page and sets margins to auto. */
+section#leftcol img {
+    float: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Aside Styles */
+/* Sets the border radius rounding the corners of the Notes section and adds 0px of margin, and changes background color. */
+aside#notes {
+    border-radius: 10px;
+    margin: 0px;
+    background-color: skyblue;
+}
+
+/* Sets the color of the horizontal rules in the notes section. */
+aside#notes hr {
+    color: darkblue !important;
+    background-color: darkblue !important;
+    border-color: darkblue !important;
+}
+
+/* Any items nested inside li elements within the notes section will have padding of 5pixels and a margin of 10pixels */
+aside#notes li {
+    padding: 5px;
+    margin: 10px;
+}
+
+/* Sets any text within emboldened elements to dark blue. */
+aside#notes b {
+    color: darkblue;
+}
+
+/* Sets links in the Notes section to underlined decoration, text color, and italic. */
+aside#notes a {
+    text-decoration: underline;
+    color: darkblue;
+    font-style: italic;
+}
+
+/* When hovered over the links in the Notes Section they will change color. */
+aside#notes a:hover,
+aside#notes a:active {
+    text-decoration: none;
+    color: darkblue;
+}
+
+/* Sets the background color, gives rounded edges, margin to the Events section. */
+aside#events {
+    border-radius: 10px;
+    margin: 0px;
+    background-color: skyblue;
+}
+
+/* Sets the color of the horizontal rules in the Events section. */
+aside#events hr {
+    color: darkblue !important;
+    background-color: darkblue !important;
+    border-color: darkblue !important;
+}
+
+/* Sets the text color and aligns the heading in the Events section. */
+aside#events h2 {
+    text-align: center;
+    color: darkblue;
+}
+
 /* Blockquote Styles */
+/* Sets the section of the right column, gives a slight rounding to the corners and sets margin padding and background color. */
+section#rightcol {
+    border-radius: 1px;
+    margin: 1fr;
+    padding: 10px;
+    background-color: skyblue;
+}
+
+/* Sets the font size, font, padding, margin, and text color of the block quote. */
+blockquote {
+    quotes: '/201C';
+    font-size: 1.12em;
+    font-family: Dobkin, sans-serif;
+    padding: 0em;
+    margin: 3em 3em 0em 3em;
+    color: gray;
+}
+
+/* Sets the quotation marks for the block quote on the right column. */
+#rightcol>blockquote::before {
+    content: open-quote;
+    padding: 0em;
+    margin: 0em;
+}
+
+/* Sets the quotation marks for the block quote on the right column. */
+#rightcol>blockquote::after {
+    content: close-quote;
+    padding: 0em;
+    margin: 0em;
+}
+
+/* Sets the padding, color and aligns it to the right side. The name of the author of the block quote. */
+p#author {
+    color: darkblue;
+    padding: 0em;
+    margin: 0em;
+    text-align: right;
+}
+
 /* Navigation Styles */
+/* Sets base background color, padding, removes the normal link decoration and sets text color for the Main Nav center. */
 nav#main_nav a {
     background-color: skyblue;
     padding: 10px 0px 10px 0px;
@@ -40,28 +176,77 @@ nav#main_nav a {
     color: aliceblue;
 }
 
-nav {
+/* When the main navigation links are hovered over or active they change color and background color. */
+nav#main_nav a:hover,
+nav#main_nav a:active {
+    background-color: aliceblue;
+    color: skyblue;
+}
+
+/* Code for Right column Nav styles, that makes the links pop out when hovered over. */
+.grow {
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.1);
+}
+
+/* Right Col Navigation Styles */
+/* Sets the background color of the right column navigation center and set basic margin and padding of it. */
+section#rightcol {
+    /* border-radius: 5px; */
+    margin: 1fr;
+    padding: 10px;
     background-color: skyblue;
 }
 
-nav a {
+/* Aligns the text of the heading in the right column navigation and sets the text color to dark blue. */
+section#rightcol h2 {
+    text-align: center;
+    color: darkblue;
+}
+
+/* Removes the list styles of the list and sets the margin. */
+section#rightcol nav li {
+    list-style: none;
+    margin: 2px;
+}
+
+/* When hovered over the right column links will change color. */
+section#rightcol nav a:hover {
+    color: darkblue;
+}
+
+/* Sets the text color of the links in the right column. */
+section#rightcol nav a {
     text-decoration: none;
     color: #ffffff;
 }
 
 /* Footer Styles */
+/* Sets the footer background color, aligns the text. */
 footer {
     text-align: center;
     text-decoration: none;
+    background-color: aliceblue;
 }
 
+/* Changes the font style of Great Lakescape Lodge and font size. */
 footer>em {
     font-style: normal;
     font-family: Champagne, sans-serif;
     font-size: 2.4em;
 }
 
-/* Section Styles */
-section#rightcol h2 {
-    color: #233250;
+/* When hovered over, the phone number in the footer will light up and when clicked will open a program to call it. */
+footer a#clicktocall {
+    text-decoration: none;
+    color: black;
 }
+
+footer a#clicktocall:hover {
+    color: skyblue;
+}
+
+/* Section Styles */
