@@ -31,7 +31,7 @@ html {
 
 /* Sets the bodies font style to Dobkin and the background-color to light blue. */
 body {
-    background-color: lightblue;
+    background-color: rgba(255, 255, 255, 0.7);
     font-family: Dobkin, sans-serif;
 }
 
@@ -56,7 +56,7 @@ section h1 {
     margin: 0em;
     text-align: center;
     color: darkblue;
-    background-color: skyblue;
+    background-color: rgba(135, 206, 235, 0.8);
 }
 
 /* Sets images inside the left column to float in the center of the page and sets margins to auto. */
@@ -71,7 +71,7 @@ section#leftcol img {
 aside#notes {
     border-radius: 10px;
     margin: 0px;
-    background-color: skyblue;
+    background-color: rgba(135, 206, 235, 0.8);
 }
 
 /* Sets the color of the horizontal rules in the notes section. */
@@ -110,7 +110,7 @@ aside#notes a:active {
 aside#events {
     border-radius: 10px;
     margin: 0px;
-    background-color: skyblue;
+    background-color: rgba(135, 206, 235, 0.8);
 }
 
 /* Sets the color of the horizontal rules in the Events section. */
@@ -132,7 +132,7 @@ section#rightcol {
     border-radius: 1px;
     margin: 1fr;
     padding: 10px;
-    background-color: skyblue;
+    background-color: rgba(135, 206, 235, 0.7);
 }
 
 /* Sets the font size, font, padding, margin, and text color of the block quote. */
@@ -170,7 +170,7 @@ p#author {
 /* Navigation Styles */
 /* Sets base background color, padding, removes the normal link decoration and sets text color for the Main Nav center. */
 nav#main_nav a {
-    background-color: skyblue;
+    background-color: rgba(95, 180, 195, 0.945);
     padding: 10px 0px 10px 0px;
     text-decoration: none;
     color: aliceblue;
@@ -198,7 +198,7 @@ section#rightcol {
     /* border-radius: 5px; */
     margin: 1fr;
     padding: 10px;
-    background-color: skyblue;
+    background-color: rgba(135, 206, 235, 0.8);
 }
 
 /* Aligns the text of the heading in the right column navigation and sets the text color to dark blue. */
@@ -229,7 +229,7 @@ section#rightcol nav a {
 footer {
     text-align: center;
     text-decoration: none;
-    background-color: aliceblue;
+    background-color: rgba(240, 248, 255, 0.7);
 }
 
 /* Changes the font style of Great Lakescape Lodge and font size. */
